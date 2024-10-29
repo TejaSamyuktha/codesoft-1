@@ -78,7 +78,7 @@ body {
     flex-direction: column; /* Stack content on top of each other */
     margin-top: 40px; /* Move the entire content down */
 }
-.buy-now-btn {
+.learn-more-btn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -88,6 +88,10 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s;
 }
+.learn-more-btn:hover {
+    background-color: #ff4044;
+}
+
 
 
 
