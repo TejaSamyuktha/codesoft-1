@@ -58,24 +58,25 @@ body {
   color: #fff;
 }
 
-/* Main Section */
+/* Main Content Layout */
 .main-content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
 }
 
-/* Tours Section with Images in a Single Row */
+/* Tours Section (Images) */
 .tours {
   display: flex;
+  flex-direction: column;
   gap: 20px;
-  justify-content: center;
+  max-width: 60%;
 }
 
 .places {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .tour-image {
@@ -83,6 +84,61 @@ body {
   height: auto;
   border-radius: 10px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  margin-right: 20px;
+  transform: translateX(20px); /* Moves image slightly to the right */
+}
+
+.buy-now-btn {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  padding: 10px 20px;
+  background-color: #ff5a5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buy-now-btn:hover {
+  background-color: #ff4044;
+}
+
+/* Heading Section */
+.heading {
+  max-width: 35%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.heading h1 {
+  font-size: 32px;
+  color: #ff5a5f;
+  margin-bottom: 15px;
+}
+
+.heading p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.learn-more-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ff5a5f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #ff4044;
 }
 
 /* Footer */
