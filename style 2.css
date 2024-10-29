@@ -1,211 +1,132 @@
-/* Global Styles */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Poppins', sans-serif;
-}
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	list-style: none;
+	font-family: 'Poppins', sans-serif;
 
-body {
-    background-color: #f3f6fa;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #333;
 }
-
-/* Navbar */
-.navbar {
-    width: 100%;
-    height: 80px;
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    color: #fff;
+.navbar{
+	width: 100%;
+	height: 80px;
+	background-color: #fee;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #000;
 }
-
-.logo h1 {
-    font-size: 28px;
-    color: #fff;
-    font-weight: bold;
+.menu ul{
+	display: flex;
+	align-items: center;
 }
-
-.menu ul {
-    display: flex;
-    gap: 20px;
+.menu ul li a{
+	text-decoration: none;
+	color: #000;
+	padding: 5px 12px;
+	letter-spacing: 2px;
+	font-size: 18px;
 }
-
-.menu ul li a {
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 12px;
-    font-size: 18px;
-    transition: color 0.3s, border-bottom 0.3s;
+.menu ul li a:hover{
+	border-bottom: 4px solid #000;
+	transition: 0.4s;
+} 
+.signup a{
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 12px;
+	padding: 12px 30px;
+	border: 2px solid #ff0000;
 }
-
-.menu ul li a:hover {
-    border-bottom: 2px solid #fff;
-    color: #ffdf00;
+.signup a:hover{
+	background-color: red;
+	transition: 0.6s;
 }
+.hover-text {
+      color: blue;
+      transition: color 0.3s; 
+    }
 
-.signup a {
-    text-decoration: none;
-    color: #333;
-    background-color: #ffdf00;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
+    
+    .hover-text:hover {
+      color: red;
+      }
+.body{
+	width: 100%;
+	height: 90vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5L0BAZUiqJnkhHACsqoyfgq8KH4gdThKSDg&usqp=CAU');
+	background-position: center;
+	background-size: cover;
 }
-
-.signup a:hover {
-    background-color: #fff;
-    color: #333;
+.heading{
+	width: 30%;
+	text-align: center;
+	color: #fff;
 }
-
-/* Main Section */
-.main-content {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5L0BAZUiqJnkhHACsqoyfgq8KH4gdThKSDg&usqp=CAU');
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    text-align: center;
+.heading h1{
+	font-size: 40px;
 }
-
-.heading h1 {
-    font-size: 48px;
-    color: #ffdf00;
-    transition: color 0.3s;
+.heading a{
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+	font-weight: bold;
+	border-radius: 45px;
+	padding: 14px 50px;
+	background-color: #fff;
 }
-
-.heading h1:hover {
-    color: #ff5733;
+.heading a:hover{
+	letter-spacing: 3px;
+	transition: 0.6s;
 }
-
-.heading p {
-    font-size: 20px;
-    margin-top: 20px;
-    max-width: 600px;
-    line-height: 1.6;
+.tours{
+	width: 70%;
+	display: flex;
+	justify-content: space-around;
 }
-
-.heading .learn-more-btn {
-    text-decoration: none;
-    color: #333;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 12px 35px;
-    border-radius: 25px;
-    background-color: #ffdf00;
-    margin-top: 25px;
-    display: inline-block;
-    transition: background-color 0.3s, color 0.3s;
+.places{
+	display: inline;
+	text-align: center;
+	border-radius: 10px;
 }
-
-.heading .learn-more-btn:hover {
-    background-color: #333;
-    color: #ffdf00;
+.places h2{
+	color: red;
+	font-size: 35px;
+	letter-spacing: 3px;
+	padding: 30px 30px;
+	background-color: #000;
 }
-
-/* Cards Section */
-.cards-container {
-    display: flex;
-    justify-content: space-around;
-    width: 90%;
-    margin-top: 40px;
-    flex-wrap: wrap;
-    gap: 20px;
+.places a{
+	text-decoration: none;
+	color: red;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 12px 30px;
+	background-color: #fff;
 }
-
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    width: 300px;
-    transition: transform 0.3s, box-shadow 0.3s;
+.places a:hover{
+	background-color: #000;
+	letter-spacing: 3px;
+	transition: 0.6s;
 }
-
-.card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+.footer{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
-
-.card figure img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
+.footer a{
+	text-decoration: none;
+	color: green;
+	font-size: 18px;
+	font-weight: bold;
 }
-
-.card-body {
-    padding: 20px;
-}
-
-.card-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: #333;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.card-title .badge {
-    background-color: #ffdf00;
-    color: #333;
-    border-radius: 5px;
-    padding: 4px 8px;
-    font-size: 12px;
-}
-
-.card p {
-    margin: 10px 0;
-    color: #555;
-}
-
-.card-actions {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-}
-
-.card-actions .badge-outline {
-    font-size: 14px;
-    padding: 6px 12px;
-    border: 1px solid #ffdf00;
-    border-radius: 5px;
-    color: #ffdf00;
-}
-
-/* Footer */
-.footer {
-    width: 100%;
-    height: 50px;
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: #ffdf00;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.footer a:hover {
-    color: #ff5733;
+.footer a:hover{
+	text-decoration: underline;
+	transition: 0.4s;
 }
