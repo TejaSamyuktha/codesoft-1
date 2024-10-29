@@ -99,16 +99,16 @@ body::before {
 /* Tours Section (Images) */
 .tours {
     display: flex;
-    flex-direction: column;
-    gap: 20px;
-    max-width: 50%;
+    justify-content: space-between; /* Align images side by side */
+    flex: 1; /* Allow it to take available space */
 }
 
 .places {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center align button */
+    text-align: center; /* Center align text below image */
 }
 
 .tour-image {
@@ -165,8 +165,10 @@ body::before {
     }
 
     .tours {
-        max-width: 100%; /* Full width for images on small screens */
+        flex-direction: column; /* Stack images vertically on small screens */
+        align-items: center; /* Center images on small screens */
     }
 }
+
 
 
