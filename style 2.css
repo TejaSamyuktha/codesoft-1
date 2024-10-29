@@ -76,7 +76,7 @@ body {
     padding: 20px; /* Reduced padding */
     max-width: 1200px; /* Limit max width */
     flex-direction: column; /* Stack content on top of each other */
-    margin-top: 40px; /* Move the entire content down */
+    margin-top: 80px; /* Move the entire content down */
 }
 .learn-more-btn {
     display: inline-block;
