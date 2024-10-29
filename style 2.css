@@ -69,13 +69,16 @@ body {
 }
 
 /* Main Content Layout */
+/* Main Content Layout */
 .main-content {
     display: flex;
     justify-content: space-between;
     padding: 20px; /* Reduced padding */
     max-width: 1200px; /* Limit max width */
     flex-direction: column; /* Stack content on top of each other */
+    margin-top: 40px; /* Move the entire content down */
 }
+
 
 /* Heading Section */
 .heading {
@@ -87,10 +90,12 @@ body {
 }
 
 /* Tours Section (Images) */
+/* Tours Section (Images) */
 .tours {
     display: flex;
     justify-content: space-between; /* Align images side by side */
     flex: 1; /* Allow it to take available space */
+    margin-top: 20px; /* Move images down */
 }
 
 .places {
@@ -99,7 +104,9 @@ body {
     flex-direction: column;
     align-items: center; /* Center align button */
     text-align: center; /* Center align text below image */
+    margin: 0 10px; /* Add horizontal margin to create space between images */
 }
+
 
 .tour-image {
     width: 100%;
@@ -124,24 +131,7 @@ body {
     background-color: #ff4044;
 }
 
-/* Footer */
-.footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #333;
-    color: #fff;
-    font-size: 14px;
-}
 
-.footer a {
-    color: #ff5a5f;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
 
 /* Responsive Design */
 @media (max-width: 768px) {
